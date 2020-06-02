@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		21074FEC248653E700AFC474 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21074FEB248653E700AFC474 /* AppDelegate.swift */; };
 		21074FEE248653E700AFC474 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21074FED248653E700AFC474 /* SceneDelegate.swift */; };
-		21074FF0248653E700AFC474 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21074FEF248653E700AFC474 /* ViewController.swift */; };
+		21074FF0248653E700AFC474 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21074FEF248653E700AFC474 /* MainVC.swift */; };
 		21074FF3248653E700AFC474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21074FF1248653E700AFC474 /* Main.storyboard */; };
 		21074FF5248653EA00AFC474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21074FF4248653EA00AFC474 /* Assets.xcassets */; };
 		21074FF8248653EA00AFC474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21074FF6248653EA00AFC474 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		21074FE8248653E700AFC474 /* ScrollSlide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollSlide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21074FEB248653E700AFC474 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21074FED248653E700AFC474 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21074FEF248653E700AFC474 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21074FEF248653E700AFC474 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		21074FF2248653E700AFC474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21074FF4248653EA00AFC474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21074FF7248653EA00AFC474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,39 @@
 		21074FEA248653E700AFC474 /* ScrollSlide */ = {
 			isa = PBXGroup;
 			children = (
+				21075001248654DD00AFC474 /* Model */,
+				21075000248654D700AFC474 /* View */,
+				21074FFF248654D100AFC474 /* Controller */,
 				21074FEB248653E700AFC474 /* AppDelegate.swift */,
 				21074FED248653E700AFC474 /* SceneDelegate.swift */,
-				21074FEF248653E700AFC474 /* ViewController.swift */,
-				21074FF1248653E700AFC474 /* Main.storyboard */,
 				21074FF4248653EA00AFC474 /* Assets.xcassets */,
 				21074FF6248653EA00AFC474 /* LaunchScreen.storyboard */,
 				21074FF9248653EA00AFC474 /* Info.plist */,
 			);
 			path = ScrollSlide;
+			sourceTree = "<group>";
+		};
+		21074FFF248654D100AFC474 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		21075000248654D700AFC474 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21074FF1248653E700AFC474 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21075001248654DD00AFC474 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21074FEF248653E700AFC474 /* MainVC.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21074FF0248653E700AFC474 /* ViewController.swift in Sources */,
+				21074FF0248653E700AFC474 /* MainVC.swift in Sources */,
 				21074FEC248653E700AFC474 /* AppDelegate.swift in Sources */,
 				21074FEE248653E700AFC474 /* SceneDelegate.swift in Sources */,
 			);
