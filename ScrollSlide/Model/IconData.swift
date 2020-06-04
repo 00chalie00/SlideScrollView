@@ -8,17 +8,25 @@
 
 import UIKit
 
-var icons = [icon]()
-
-class icon {
-    var title: String
-    var description: String
-    var image: UIImage!
+class Icon {
     
-    init(title: String, description: String, image: UIImage) {
-        self.title = title
-        self.description = description
-        self.image = image
+    var icons = [icon]()
+    
+    struct icon {
+        var title: String
+        var description: String
+        var image: UIImage!
+    }
+    
+    func getSummerData(season: String) -> [icon] {
+        var returnSeason = [icon]()
+        if season == "summer" {
+            returnSeason = summerIcons()
+        } else if season == "winter" {
+            returnSeason = winterIcon()
+        }
+        
+        return returnSeason
     }
     
     func summerIcons() -> [icon] {
