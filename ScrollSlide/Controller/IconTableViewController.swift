@@ -13,6 +13,7 @@ class IconTableViewController: UITableViewController {
     @IBOutlet var tableview: UITableView!
     
     var icons = Icon()
+    var seasonString: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,19 +29,26 @@ class IconTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let raw = icons.getSummerData(season: "winter")
+        let raw = icons.getSeasonData(season: "winter")
         return raw.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! TableViewCell
-        let raw = icons.getSummerData(season: "winter")
-        cell.title?.text = raw[indexPath.row].title
-        cell.descrip.text = raw[indexPath.row].description
+        if seasonString == "winter" {
+            let raw = icons.getSeasonData(season: "winter")
+            cell.title?.text = raw[indexPath.row].title
+            cell.descrip.text = raw[indexPath.row].description
+        } else {
+            let raw = icons.getSeasonData(season: "summer")
+            cell.title?.text = raw[indexPath.row].title
+            cell.descrip.text = raw[indexPath.row].description
+        }
+        
+        
         
         return cell
     }
-    
     
     /*
      // Override to support conditional editing of the table view.

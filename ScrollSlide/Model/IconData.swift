@@ -18,7 +18,7 @@ class Icon {
         var image: UIImage!
     }
     
-    func getSummerData(season: String) -> [icon] {
+    func getSeasonData(season: String) -> [icon] {
         var returnSeason = [icon]()
         if season == "summer" {
             returnSeason = summerIcons()
