@@ -15,6 +15,7 @@
 		21074FF8248653EA00AFC474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21074FF6248653EA00AFC474 /* LaunchScreen.storyboard */; };
 		21B50A2D2487937800F075AB /* IconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B50A2C2487937800F075AB /* IconData.swift */; };
 		21B50A2F2487A06300F075AB /* IconTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B50A2E2487A06300F075AB /* IconTableViewController.swift */; };
+		21D45860248F820900E101EB /* SideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4585F248F820900E101EB /* SideVC.swift */; };
 		21D5EB842488EC8C003EC8AA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D5EB832488EC8C003EC8AA /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		21074FF9248653EA00AFC474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21B50A2C2487937800F075AB /* IconData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconData.swift; sourceTree = "<group>"; };
 		21B50A2E2487A06300F075AB /* IconTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTableViewController.swift; sourceTree = "<group>"; };
+		21D4585F248F820900E101EB /* SideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideVC.swift; sourceTree = "<group>"; };
 		21D5EB832488EC8C003EC8AA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				21074FEF248653E700AFC474 /* MainVC.swift */,
 				21B50A2E2487A06300F075AB /* IconTableViewController.swift */,
 				21D5EB832488EC8C003EC8AA /* TableViewCell.swift */,
+				21D4585F248F820900E101EB /* SideVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				21B50A2D2487937800F075AB /* IconData.swift in Sources */,
 				21074FF0248653E700AFC474 /* MainVC.swift in Sources */,
 				21074FEC248653E700AFC474 /* AppDelegate.swift in Sources */,
+				21D45860248F820900E101EB /* SideVC.swift in Sources */,
 				21D5EB842488EC8C003EC8AA /* TableViewCell.swift in Sources */,
 				21074FEE248653E700AFC474 /* SceneDelegate.swift in Sources */,
 				21B50A2F2487A06300F075AB /* IconTableViewController.swift in Sources */,
